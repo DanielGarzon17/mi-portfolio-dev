@@ -8,6 +8,11 @@
 - **Git y GitHub** para el control de versiones 📂
 
 ## 📂 Estructura del Repositorio
+![image](https://github.com/user-attachments/assets/e938b2dc-2c45-41f3-b386-c97f31dfcec6)
+
+![image](https://github.com/user-attachments/assets/16153275-8f8d-4ca3-a1f7-65f52cb0bef4)
+
+![image](https://github.com/user-attachments/assets/c53e3f52-ab6f-49ac-9dfd-ac72d448160a)
 
 
 ## 🚧 En Desarrollo
