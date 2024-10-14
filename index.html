@@ -14,23 +14,25 @@
 <body>
   <main>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <!-- Fixed Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Daniel Garzon</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#"><img src="img\logo-DG.png" alt="" height="50px"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#proyectos">Proyectos</a>
+                <a class="nav-link" href="#experience">Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -38,183 +40,237 @@
       </nav>
     </header>
 
-    <!-- inicio de los sections  -->
-    <section id="background-image">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-8 text-center">
-            <h1 class="text-center text-white logo" id="name" href="#about-me">
-              <a href="#about-me" style="text-decoration: none; color: inherit;"><b>Daniel Garzón 😎</b></a>
-            </h1>
-            <h2 class="text-center logo" id="major">Systems Engineer in Training</h2>
-            <p class="typewriter titular logo">Automation Engineer 🤖</p>
-            <p class="typewriter titular logo">Data Analyst 💾</p>
-          </div>
-          <div class="col-12 col-md-4 image-container develop-image">
-            <img class="logo" src="img\tl.webp" width="500" height="500">
+    <div class="content col-12">
+      <!-- inicio de los sections  -->
+      <section id="background-image">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8 text-center">
+              <h1 class="text-center text-white logo" id="name" href="#about-me">
+                <a href="#about-me" class="link"><b>Daniel Garzón 😎</b></a>
+              </h1>
+              <h2 class="text-center logo" id="major"><a href="#studies" class="link">Systems Engineer in Training</a>
+              </h2>
+              <p class="typewriter titular logo"> <a href="#experience" class="link">Automation Engineer 🤖</a></p>
+              <p class="typewriter titular logo"><a href="#experience" class="link">Data Analyst 💾</a></p>
+            </div>
+            <div class="col-12 col-md-4 image-container develop-image">
+              <img class="logo" src="img\tl.webp" width="500" height="500">
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <svg class="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
-      <path d="M-100 79C-100 79 218.416 23.165 693.5 23.165C1168.58 23.165 1447.79 79 1447.79 79V0H-100V79Z"
-        fill="#023047" />
-    </svg>
-    <section id="about">
-      <div class="container">
-        <!-- Zona Acerca de mí -->
-        <section id="about-me" class="about-me-section ">
-          <div class="row align-items-center">
-            <!-- Columna de imagen -->
-            <div class="col-md-4 text-center mb-3 mb-md-0">
-              <img src="img\fotoMia.jpg" class="img-fluid rounded-circle image-circle-gradient logo" alt="Mi imagen">
-            </div>
-            <!-- Columna de párrafo -->
-            <div class="col-md-7">
-              <h2 class="text-center">About me</h2>
-              <p class="text-justify">I am Daniel Garzón, a Systems Engineering student with experience in process automation and data
-                analysis. With more than a year of experience in RPA and agile methodologies such as Scrum and Kanban, I
-                am motivated to learn new technologies and develop innovative solutions in the software field.</p>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <div class="container my-5">
-        <!-- Zona Estudios -->
-        <section id="studies" class="studies-section">
-          <h2 class="mb-4">Education</h2>
-          <div class="row">
-            <!-- Tarjeta 2 -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 align-items-center">
-                <img src="https://rita.udistrital.edu.co:23604/adminlab/storage/imagenes_index/logoud.png" class="card-img-top" alt="Desarrollo Web">
-                <div class="card-body">
-                  <h5 class="card-title">District University</h5>
-                  <p class="card-text">Systems engineer <br>June 2020 - April 2021</p>
-                  <a href="#" class="btn btn-primary bg-dark disabled">algunos proyectos (en construccion)</a>
-                </div>
+      </section>
+      <svg class="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-100 79C-100 79 218.416 23.165 693.5 23.165C1168.58 23.165 1447.79 79 1447.79 79V0H-100V79Z"
+          fill="#023047" />
+      </svg>
+      <section id="about">
+        <div class="container">
+          <!-- Zona Acerca de mí -->
+          <section id="about-me" class="about-me-section ">
+            <div class="row align-items-center">
+              <!-- Columna de imagen -->
+              <div class="col-md-4 text-center mb-3 mb-md-0">
+                <img src="img\fotoMia.jpg" class="img-fluid rounded-circle image-circle-gradient logo" alt="Mi imagen">
+              </div>
+              <!-- Columna de párrafo -->
+              <div class="col-md-7">
+                <h2 class="text-center">About me</h2>
+                <p class="text-justify">I am Daniel Garzón, a Systems Engineering student with experience in process
+                  automation and data
+                  analysis. With more than a year of experience in RPA and agile methodologies such as Scrum and Kanban,
+                  I
+                  am motivated to learn new technologies and develop innovative solutions in the software field.</p>
+                <b class="justify-content-center">Here you can view various <a
+                    href="https://github.com/DanielGarzon17?tab=repositories" target="_blank">projects and
+                    repositories</a></b>
               </div>
             </div>
+          </section>
+        </div>
 
-            <!-- Tarjeta 1 -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 align-items-center">
+        <div class="container my-5">
+          <!-- Zona Estudios -->
+          <section id="studies" class="studies-section">
+            <h2 class="mb-4 text-center">Education</h2>
+            <div class="row">
+              <!-- Tarjeta 2 -->
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 align-items-center logo">
+                  <img src="https://rita.udistrital.edu.co:23604/adminlab/storage/imagenes_index/logoud.png"
+                    class="card-img-top" alt="Desarrollo Web">
+                  <div class="card-body">
+                    <h5 class="card-title">District University</h5>
+                    <p class="card-text">Systems engineer <br>June 2020 - April 2021</p>
+                    <a href="#" class="btn btn-primary bg-dark disabled">algunos proyectos (en construccion)</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjeta 1 -->
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 align-items-center logo">
                   <img
                     src="https://www1.funcionpublica.gov.co/documents/28587425/41589060/logo-Universidad-Nacional.png/92343759-b2d7-7df3-4425-efa3337f2da7?t=1671747619326"
                     class="card-img-top" alt="Ingeniería de Sistemas">
-                <div class="card-body">
-                  <h5 class="card-title">National University of Colombia</h5>
-                  <p class="card-text">Computer and systems engineering<br>June 2021 - Present.</p>
-                  <a href="#about-me" class="btn btn-primary bg-dark disabled">algunos proyectos (en construccion)</a>
+                  <div class="card-body">
+                    <h5 class="card-title">National University of Colombia</h5>
+                    <p class="card-text">Computer and systems engineering<br>June 2021 - Present.</p>
+                    <a href="#about-me" class="btn btn-primary bg-dark disabled">algunos proyectos (en construccion)</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjeta 3 -->
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 align-items-center logo">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Universidad_de_los_Andes_%28logo%29.png"
+                    class="card-img-top" alt="Automatización RPA">
+                  <div class="card-body">
+                    <h5 class="card-title">Andes University</h5>
+                    <p class="card-text">Academic exchange for 1 semester <br>July 2024 - December 2024</p>
+                    <a href="#" class="btn btn-primary bg-dark disabled">algunos proyectos (en construccion)</a>
+                  </div>
                 </div>
               </div>
             </div>
+          </section>
+        </div>
 
-            <!-- Tarjeta 3 -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 align-items-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Universidad_de_los_Andes_%28logo%29.png" class="card-img-top" alt="Automatización RPA">
-                <div class="card-body">
-                  <h5 class="card-title">Andes University</h5>
-                  <p class="card-text">Academic exchange for 1 semester <br>July 2024 - December 2024</p>
-                  <a href="#" class="btn btn-primary bg-dark disabled">algunos proyectos (en construccion)</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-
-
-
-      <section id="proyectos">
-        <div class="container">
+        <div class="container my-5">
           <div class="row">
-            <div class="col-12">
-              <h2 class="text-center">Proyectos</h2>
-              <div class="row">
-                <div class="col-md-4">
-                  <img src="img/fotoMia.jpg" alt="Proyecto 1" class="img-fluid">
-                  <h3>Proyecto 1</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis blanditiis ipsum quam aliquid nihil
-                    ab similique expedita. Provident et qui velit, quia ea in, ad omnis facilis obcaecati doloribus eum!
-                  </p>
-                </div>
-                <div class="col-md-4">
-                  <img src="img/proyecto2.jpg" alt="Proyecto 2" class="img-fluid">
-                  <h3>Proyecto 2</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum
-                    magna
-                    sed, convallis ex.</p>
-                </div>
-                <div class="col-md-4">
-                  <img src="img/proyecto3.jpg" alt="Proyecto 3" class="img-fluid">
-                  <h3>Proyecto 3</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum
-                    magna
-                    sed, convallis ex.</p>
-                </div>
-              </div>
+            <!-- Experience Section -->
+            <div class="col-md-8">
+              <section id="experience" class="experience-section">
+                <h2 class="mb-4 text-center">Work Experience</h2>
+                <ol class="list-group list-group-numbered">
+                  <!-- Experience 1 -->
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">
+                        <img src="https://flagcdn.com/ec.svg" class="flag" alt="Ecuador">
+                        <img src="https://flagcdn.com/us.svg" class="flag" alt="United States">
+                        RPA Developer - <a href="https://www.efikabc.com/" target="_blank">Efika Business Consulting</a>
+                      </div>
+                      <p>Ecuador - United States | January 2024 - June 2024</p>
+                      <ul>
+                        <li>Automation of processes (BPMS or RPA).</li>
+                        <li>API consumption (REST and SOAP).</li>
+                        <li>Project management under the PMI model.</li>
+                        <li>Preparation of functional process documents (PDD).</li>
+                      </ul>
+                    </div>
+                    <span class="badge text-bg-primary rounded-pill">2024</span>
+                  </li>
+
+                  <!-- Experience 2 -->
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">
+                        <img src="https://flagcdn.com/co.svg" class="flag" alt="Colombia">
+                        RPA Developer - <a href="https://co.linkedin.com/company/pidgin-contactsolutions/"
+                          target="_blank">Pidgin Contact Solutions & Teleperformance</a>
+                      </div>
+                      <p>Colombia | July 2023 - October 2023</p>
+                      <ul>
+                        <li>Process automation using Python (Web Scraping).</li>
+                        <li>API and REST/SOAP service consumption.</li>
+                        <li>Data integration processes under ETL methodology.</li>
+                      </ul>
+                    </div>
+                    <span class="badge text-bg-primary rounded-pill">2023</span>
+                  </li>
+
+                  <!-- Experience 3 -->
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">
+                        <img src="https://flagcdn.com/co.svg" class="flag" alt="Colombia">
+                        Data Analyst - <a href="https://unal.edu.co/" target="_blank">National University of
+                          Colombia</a>
+                      </div>
+                      <p>November 2022 - Present</p>
+                      <ul>
+                        <li>Support in CNA and ABET accreditation processes.</li>
+                        <li>Database management.</li>
+                        <li>Data analysis and report generation.</li>
+                        <li>File organization.</li>
+                      </ul>
+                    </div>
+                    <span class="badge text-bg-primary rounded-pill">2022</span>
+                  </li>
+                </ol>
+              </section>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="col-md-4">
+              <section id="contact" class="contact-section">
+                <h2 class="mb-4 text-center animate-charcter">Contact Me</h2>
+                <form>
+                  <div class="mb-3">
+                    <label for="inputName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                      placeholder="Enter your email" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputMessage" class="form-label">Message</label>
+                    <textarea class="form-control" id="inputMessage" rows="4" placeholder="Write your message here"
+                      required></textarea>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Subscribe to newsletter</label>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary bg-dark">Submit</button>
+                  </div>
+                </form>
+              </section>
             </div>
           </div>
         </div>
-      </section>
-
-      <section id="contacto">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="text-center">Contacto</h2>
-              <form>
-                <div class="form-group">
-                  <label for="nombre">Nombre:</label>
-                  <input type="text" id="nombre" name="nombre" class="form-control">
-                </div>
-                <div class="form-group">
-                  <label for="email">Correo electrónico:</label>
-                  <input type="email" id="email" name="email" class="form-control">
-                </div>
-                <div class="form-group">
-                  <label for="mensaje">Mensaje:</label>
-                  <textarea id="mensaje" name="mensaje" class="form-control"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- inicio del footer -->
-      <!-- <hr> -->
-      <footer>
-        <div id="div-container" class="container rounded" align="center">
-          <div class="row">
-            <div class="col-12">
-              <h4 class="text-footer">Redes Sociales</h4>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 div-imagenes-footer">
-              <a href="https://github.com/DanielGarzon17/" target="_blank">
-                <img class="logo" src="img/footer/github.png" alt="Instagram" height="30px">
-              </a>
-              <a href="https://www.linkedin.com/in/dagarzonm/" target="_blank">
-                <img class="logo" src="img/footer/linkedin.png" alt="Linkedin" height="30px">
-              </a>
-              <a href="mailto:dagarzonmo@unal.edu.co" target="_blank">
-                <img class="logo" src="img/footer/gmail.png" alt="gmail" height="30px">
-              </a>
-            </div>
-            <div class="row text-white div-imagenes-footer">
+        <!-- inicio del footer -->
+        <!-- <hr> -->
+        <footer>
+          <svg class="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-100 0C-100 0 218.416 55.835 693.5 55.835C1168.58 55.835 1487 0 1487 0V79H-100V0Z" fill="#023047">
+            </path>
+          </svg>
+          <div id="div-container" class="container rounded" align="center">
+            <div class="row">
               <div class="col-12">
-                <p class="text-footer"><b>© 2024 Daniel Garzon.</b> Todos los derechos reservados.</p>
+                <h4 class="text-footer">Redes Sociales</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 div-imagenes-footer">
+                <a href="https://github.com/DanielGarzon17/" target="_blank">
+                  <img class="logo" src="img/footer/github.png" alt="Instagram" height="30px">
+                </a>
+                <a href="https://www.linkedin.com/in/dagarzonm/" target="_blank">
+                  <img class="logo" src="img/footer/linkedin.png" alt="Linkedin" height="30px">
+                </a>
+                <a href="mailto:dagarzonmo@unal.edu.co" target="_blank">
+                  <img class="logo" src="img/footer/gmail.png" alt="gmail" height="30px">
+                </a>
+              </div>
+              <div class="row text-white div-imagenes-footer">
+                <div class="col-12">
+                  <p class="text-footer"><b>© 2024 Daniel Garzon.</b> Todos los derechos reservados.</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </footer>
+    </div>
 
-      </footer>
+
   </main>
 </body>
 

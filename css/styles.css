@@ -1,3 +1,17 @@
+.link{
+    text-decoration: none; 
+    color: inherit;
+}
+
+.navbar-custom {
+    background-color: #023047; /* Custom background color */
+}
+.navbar-custom .nav-link {
+    color: white; /* Change link color to white for better contrast */
+}
+.navbar-custom .navbar-brand {
+    color: white; /* Change brand color to white */
+}
 :root{
     --color-AzulOscuro: #023047;
     --color-AzulMedio: #219EBC;
@@ -10,6 +24,8 @@
     /* background-image: url('https://img.freepik.com/foto-gratis/primer-plano-extremo-lineas-codigo-mostradas-monitores-computadora_482257-94050.jpg?t=st=1728844135~exp=1728847735~hmac=689a2802985931905fe4c395632b8eabfa32afb1ebf135ce97f31dc390392ec8&w=996'); */
     /* background-image: url('https://wallpapercave.com/wp/wp1904065.png'); */
     background-color: var(--color-AzulOscuro);
+    padding: 20px;
+    margin-top: 70px;
     background-position: center;
     background-size: cover;
     height: 100%;
@@ -149,12 +165,41 @@ footer{
     height: auto;
 }
 
+.flag {
+    width: 30px; /* Adjust size of the flag */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between flag and text */
+}
+
 .about-me-section {
+    background-color: #8ECAE6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.studies-section {
     background-color: #8ECAE6;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.experience-section {
+    background-color: #8ECAE6;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.contact-section {
+    background-color: var(--color-azulClaro); /* Light background */
+    padding: 20px; /* Padding around the content */
+    border: 1px solid #007bff; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-top: 30px; /* Margin above the section */
 }
 .curved-row:before {
     content: '';
@@ -171,4 +216,50 @@ footer{
 .content {
     text-align: center; /* Centrar el texto */
     color: white; /* Color del texto */
+}
+
+.animate-charcter{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 30px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.navbar-custom .navbar-toggler {
+    border: none; /* Remove default border */
+}
+
+.navbar-custom .navbar-toggler .navbar-toggler-icon {
+    background-color: transparent; /* Make the default icon transparent */
+}
+
+.navbar-custom .navbar-toggler-icon::before,
+.navbar-custom .navbar-toggler-icon::after {
+    content: '';
+    display: block;
+    width: 30px; /* Width of the lines */
+    height: 3px; /* Height of the lines */
+    background-color: white; /* Change the color of the lines */
+    margin: 6px 0; /* Space between lines */
 }
